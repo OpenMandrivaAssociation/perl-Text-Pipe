@@ -17,6 +17,7 @@ BuildRequires:	perl(Class::Accessor::Complex)
 BuildRequires:	perl(Class::Accessor::Constructor)
 BuildRequires:	perl(Class::Accessor::Installer)
 BuildRequires:	perl(ExtUtils::MakeMaker)
+BuildRequires:	perl(Module::AutoInstall)
 BuildRequires:	perl(List::Util)
 BuildRequires:	perl(Sub::Name)
 BuildRequires:	perl(Test::More)
@@ -56,17 +57,3 @@ perl Makefile.PL INSTALLDIRS=vendor
 %doc Changes LICENSE README
 %{_mandir}/man3/*
 %{perl_vendorlib}/*
-
-%changelog
-* Mon Apr 25 2011 Funda Wang <fwang@mandriva.org> 0.100.0-2mdv2011.0
-+ Revision: 658410
-- rebuild for updated rpm-setup
-
-* Sat Sep 19 2009 Jérôme Quelin <jquelin@mandriva.org> 0.100.0-1mdv2010.0
-+ Revision: 444616
-- update to 0.10
-- import perl-Text-Pipe
-
-
-* Thu Sep 17 2009 cpan2dist 0.08-1mdv
-- initial mdv release, generated with cpan2dist
