@@ -1,15 +1,13 @@
 %define upstream_name    Text-Pipe
-%define upstream_version 0.10
-
 Name:		perl-%{upstream_name}
-Version:	%{upstream_version}
-Release:	6
+Version:	0.10
+Release:	7
 
 Summary:	Common text filter API
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		https://github.com/hanekomu/text-pipe
-Source0:	https://cpan.metacpan.org/authors/id/M/MA/MARCEL/Text-Pipe-%{upstream_version}.tar.gz
+Source0:	https://cpan.metacpan.org/authors/id/M/MA/MARCEL/Text-Pipe-%{version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
@@ -40,7 +38,7 @@ This distribution aims at offering a common text filter API. So if you want
 to use text pipes with Template Toolkit, you just need to write an adapter.
 
 %prep
-%setup -q -n %{upstream_name}-%{upstream_version}
+%setup -q -n %{upstream_name}-%{version}
 # wants to download junk from Internet
 rm -f inc/Module/AutoInstall.pm
 
